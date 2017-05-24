@@ -4,3 +4,50 @@
   padding: 0px;
   font-family: helvetica, sans-serif;
 }
+
+a {
+  text-decoration: none;
+  color: snow;
+}
+
+/* SITE NAVIGATION */
+
+#container {
+  background-image: url('./images/6ZEavKW.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#nav {
+}
+
+#nav-list {
+  list-style-type: none;
+  margin: 0px;
+  padding: 15px;
+  text-align: right;
+}
+
+#nav-list li {
+  display: inline;
+  padding: 10px;
+}
+
+
+
+#works {
+  height: 500px;
+  background-color: snow;
+}
+
+#about {
+  height: 500px;
+}
+
+#contact {
+  height: 500px;
+}
+
+#footer {
+  background-color: gray;
+}

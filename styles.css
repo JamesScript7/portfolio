@@ -13,7 +13,7 @@ a {
 /* SITE NAVIGATION */
 
 #container {
-  background-image: url('./images/6ZEavKW.jpg');
+  background-image: url('./images/poly.jpg');
   background-attachment: fixed;
   background-size: cover;
 }
@@ -33,7 +33,9 @@ a {
   padding: 10px;
 }
 
-
+#skills {
+  background-color: snow;
+}
 
 #works {
   height: 500px;
@@ -49,5 +51,33 @@ a {
 }
 
 #footer {
-  background-color: gray;
+  background-color: #101010;
+  padding: 10px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#btm-links {
+  padding: 10px;
+}
+
+.button {
+  color: snow;
+  position: relative;
+  padding: 1em 1.5em;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  margin: 1em 0.8em;
+}
+
+.button::before {
+
 }

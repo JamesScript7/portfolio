@@ -18,10 +18,10 @@
   (function($) {
     $(document).ready(function() {
       $(window).scroll(function() {
-        if ($(this).scrollTop() > 20) {
-          $('#nav').fadeIn(500);
+        if ($(this).scrollTop() > 50) {
+          $('#nav').fadeIn(800);
         } else {
-          $('#nav').fadeOut(500);
+          $('#nav').fadeOut(800);
         }
       });
     });

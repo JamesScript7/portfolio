@@ -95,6 +95,8 @@ a {
 
 #skills .skill-icons {
   margin: 20px;
+  width: 100px;
+  height: 100px;
 }
 
 #skill-icon-box {

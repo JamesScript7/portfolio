@@ -10,6 +10,10 @@ a {
   color: snow;
 }
 
+a:hover {
+  color: lightblue;
+}
+
 #container {
   background-image: url('./images/flatmount.jpg');
   background-attachment: fixed;
@@ -105,7 +109,7 @@ a {
   text-align: center;
   font-size: 1.6em;
   border: 4px solid snow;
-  background-color: rgba(155, 183, 132, 0.1);
+  background-color: rgba(111, 186, 251, 0.1);
 }
 
 #about {
@@ -127,32 +131,56 @@ img.pic-round {
   width: 200px;
   border-radius: 50%;
   display: inline;
+  margin: 10px 0px;
   box-shadow: 1px 2px 8px rgb(29, 29, 79);
 }
 
 .about-bio {
   display: inline-block;
-  width: 75%;
+  width: 80%;
   text-align: left;
-  padding: 15px;
+  padding: 15px 10px 15px 10px;
+  margin: 10px;
+  border-top: 1px solid #484848;
+}
+
+.pizza-icons {
+  text-align: center;
+  word-spacing: 20px;
 }
 
 #skill-icon-box {
-  max-width: 750px;
+  max-width: 650px;
   margin: auto;
   text-align: center;
 }
 
 #works {
-  height: 500px;
   background-color: transparent;
+  padding-bottom: 30px;
+}
+
+.work-pics {
+  max-width: 750px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.work-pics div {
+  display: inline-block;
+}
+
+img.pic {
+  width: 270px;
+  margin: 20px;
+  box-shadow: 0px 2px 8px #101010;
 }
 
 /* FOOTER AREA */
 
 #footer {
   background-color: #151515;
-  padding: 10px;
+  padding: 20px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -172,7 +200,6 @@ img.pic-round {
   background-color: #151515;
   color: #505050;
   display: block;
-  padding: 0px 0px 8px 0px;
   font-size: .9em;
   text-align: center;
 }

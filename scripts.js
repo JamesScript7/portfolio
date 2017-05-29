@@ -2,7 +2,7 @@
 
 (function() {
   // Background Image parallax effect
-  var velocity = 0.45;
+  var velocity = 0.2;
   function update() {
     var pos = $(window).scrollTop();
 

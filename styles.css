@@ -23,24 +23,6 @@ a:hover {
   background-size: cover;
 }
 
-/* MOBILE */
-@media only screen and (max-width: 400px) {
-  #container {
-    background-image: url('./images/flatmount.jpg');
-    background-attachment: fixed;
-    -webkit-background-size: 500%;
-  	-moz-background-size: 500%;
-  	-o-background-size: 500%;
-    background-size: 500%;
-  }
-
-  #skills .skill-icons {
-    margin: 20px;
-    width: 80px;
-    height: 80px;
-  }
-}
-
 /* DESKTOP*/
 @media only screen and (min-width: 400px) {
   #skills .skill-icons {
@@ -90,6 +72,25 @@ a:hover {
   padding: 0px 10px;
 }
 
+/* MOBILE */
+@media only screen and (max-width: 400px) {
+  #container {
+    background-image: url('./images/flatmountmobile.jpg');
+    background-attachment: fixed;
+    -webkit-background-size: 300%;
+  	-moz-background-size: 300%;
+  	-o-background-size: 300%;
+    background-size: 300%;
+  }
+
+  #skills .skill-icons {
+    margin: 20px;
+    width: 80px;
+    height: 80px;
+  }
+
+}
+
 #intro {
   display: -webkit-box;
   display: -moz-box;
@@ -129,10 +130,10 @@ a:hover {
 }
 
 img.pic-round {
-  width: 200px;
-  border-radius: 50%;
   display: inline;
+  width: 200px;
   margin: 10px 0px;
+  border-radius: 50%;
   box-shadow: 1px 2px 8px #101010;
 }
 

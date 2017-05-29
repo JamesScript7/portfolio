@@ -2,7 +2,7 @@
 
 (function() {
   // Background Image parallax effect
-  var velocity = 0.2;
+  var velocity = 0.5;
   function update() {
     var pos = $(window).scrollTop();
 
@@ -16,7 +16,6 @@
   $(window).bind('scroll', update);
 
   // Navigation bar hide and show effect
-
   (function($) {
     $(document).ready(function() {
       $(window).scroll(function() {
@@ -30,7 +29,6 @@
   })(jQuery);
 
   // Smooth Scrolling on anchor tags
-
   $('a').click(function() {
     $('html, body').animate({
       scrollTop: $( $(this).attr('href') ).offset().top

@@ -7,6 +7,7 @@
       James Kim: Fullstack Developer
     </title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
   </head>
 
   <body>
@@ -15,22 +16,22 @@
       <nav id="nav">
         <ul id="nav-list">
           <li>
-            <a href="#about">
+            <a href="#about" class="nav-text">
               About
             </a>
           </li>
           <li>
-            <a href="#skills">
+            <a href="#skills" class="nav-text">
               Skills
             </a>
           </li>
           <li>
-            <a href="#works">
+            <a href="#works" class="nav-text">
               Works
             </a>
           </li>
           <li>
-            <a href="#footer">
+            <a href="#footer" class="nav-text">
               Contact
             </a>
           </li>
@@ -41,8 +42,9 @@
       <div id="home">
         <div id="intro">
           <div id="intro-box">
-            <h1>Hi, I'm James</h1>
-            <p>Fullstack Web Developer</p>
+            <h2>Hi,</h2>
+            <h2>I'm James</h2>
+            <h6>Fullstack Web Developer</h6>
           </div>
         </div>
         <!-- ABOUT -->
@@ -50,8 +52,12 @@
           <div class="title">
             <h1>About Me</h1>
           </div>
-
-          <p>I love pizza</p>
+          <div class="about-content">
+            <p>
+              I have a passion in creating and solving problems. I mostly survive
+              off of pizza and coding.
+            </p>
+          </div>
         </div>
         <!-- SKILLS -->
         <div id="skills" class="boxes">
@@ -130,19 +136,17 @@
             </button>
           </a>
         </div>
-      </footer>
 
-      <div id="copyright">
-        &copy 2017 JamesKim
-      </div>
+        <div id="copyright">
+          &copy 2017 JamesKim
+        </div>
+      </footer>
 
     </div>
     <script
       src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script>
-
-    <!-- Lets add the p5.js library to make things interactive and fun! -->
     <script src="scripts.js"></script>
   </body>
 </html>

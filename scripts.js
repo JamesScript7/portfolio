@@ -19,7 +19,7 @@
     $(document).ready(function() {
       $(window).scroll(function() {
         if ($(this).scrollTop() > 50) {
-          $('#nav').fadeIn(800);
+          $('#nav').fadeIn(500);
         } else {
           $('#nav').fadeOut(800);
         }

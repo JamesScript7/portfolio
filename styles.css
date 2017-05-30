@@ -58,18 +58,19 @@ a:hover {
   z-index: 9999;
   display: none;
   box-shadow: 0px 1px 8px #101010;
+  display: none;
 }
 
-#nav-list {
+.nav-list {
   list-style-type: none;
   margin: 0px;
-  padding: 15px 10px;
+  padding: 10px 10px;
   text-align: center;
 }
 
-#nav-list li {
+.nav-list li {
   display: inline;
-  padding: 0px 10px;
+  padding: 0px 5px;
 }
 
 /* MOBILE */
@@ -77,10 +78,10 @@ a:hover {
   #container {
     background-image: url('./images/flatmountmobile.jpg');
     background-attachment: fixed;
-    -webkit-background-size: 300%;
-  	-moz-background-size: 300%;
-  	-o-background-size: 300%;
-    background-size: 300%;
+    -webkit-background-size: 250%;
+  	-moz-background-size: 250%;
+  	-o-background-size: 250%;
+    background-size: 250%;
   }
 
   #skills .skill-icons {
@@ -88,7 +89,6 @@ a:hover {
     width: 80px;
     height: 80px;
   }
-
 }
 
 #intro {
@@ -124,8 +124,8 @@ a:hover {
   padding: 20px 20px 0px 20px;
   word-spacing: 3px;
   line-height: 150%;
-  color: #282828;
-  background-color: rgba(255, 255, 255, 0.2);
+  color: snow;
+  background-color: rgba(111, 186, 251, 0.1);
   text-align: center;
 }
 
@@ -157,18 +157,18 @@ img.pic-round {
   text-align: center;
 }
 
-#works {
+#projects {
   background-color: transparent;
   padding: 0px;
 }
 
-.work-pics {
+.project-pics {
   max-width: 750px;
   margin: 10px auto;
   text-align: center;
 }
 
-.work-pics div {
+.project-pics div {
   display: inline-block;
 }
 

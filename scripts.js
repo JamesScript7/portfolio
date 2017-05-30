@@ -2,13 +2,12 @@
 
 (function() {
   // Background Image parallax effect
-  var velocity = 0.5;
+  var velocity = 0.25;
   function update() {
     var pos = $(window).scrollTop();
 
     $('#container').each(function() {
       var $element = $(this);
-      // var height = $element.height();
       $(this).css('background-position', '0% ' + Math.round((-pos) * velocity) + 'px');
     });
   };
@@ -32,7 +31,7 @@
   $('a').click(function() {
     $('html, body').animate({
       scrollTop: $( $(this).attr('href') ).offset().top
-    }, 1000);
+    }, 1500);
     return false;
   });
 

@@ -18,8 +18,8 @@ a:hover {
   background-image: url('./images/flatmount.jpg');
   background-attachment: fixed;
   -webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -64,7 +64,7 @@ a:hover {
 .nav-list {
   list-style-type: none;
   margin: 0px;
-  padding: 10px 10px;
+  padding: 15px 10px;
   text-align: center;
 }
 
@@ -73,14 +73,14 @@ a:hover {
   padding: 0px 5px;
 }
 
-/* MOBILE */
+/* MOBILE: Background image and skills icons */
 @media only screen and (max-width: 400px) {
   #container {
     background-image: url('./images/flatmountmobile.jpg');
     background-attachment: fixed;
     -webkit-background-size: 250%;
-  	-moz-background-size: 250%;
-  	-o-background-size: 250%;
+    -moz-background-size: 250%;
+    -o-background-size: 250%;
     background-size: 250%;
   }
 
@@ -90,6 +90,8 @@ a:hover {
     height: 80px;
   }
 }
+
+/* First Impression */
 
 #intro {
   display: -webkit-box;
@@ -163,7 +165,7 @@ img.pic-round {
 }
 
 .project-pics {
-  max-width: 750px;
+  max-width: 700px;
   margin: 10px auto;
   text-align: center;
 }
@@ -173,9 +175,17 @@ img.pic-round {
 }
 
 img.pic {
-  width: 270px;
+  width: 650px;
   margin: 20px;
   box-shadow: 0px 2px 8px #101010;
+}
+
+/* MOBILE: Project pics */
+
+@media only screen and (max-width: 400px) {
+  img.pic {
+  width: 270px;
+  }
 }
 
 /* FOOTER AREA */

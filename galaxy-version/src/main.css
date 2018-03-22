@@ -23,6 +23,12 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+.cat {
+  width: 250px;
+}
+.pizza {
+  width: 175px;
+}
 /* .nav {
   font-family: 'Source Sans Pro', Tahoma, Geneva, sans-serif;
   font-size: 20px;
@@ -66,9 +72,9 @@ body {
   background-image: -webkit-linear-gradient(45deg, #ae57bf, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
   background-image: linear-gradient(45deg, #ae57bf, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-animation: slideIn 1s ease-out;
-  -moz-animation: slideIn 1s ease-out;
-  -o-animation: slideIn 1s ease-out;
-  animation: slideIn 1s ease-out;
+     -moz-animation: slideIn 1s ease-out;
+       -o-animation: slideIn 1s ease-out;
+          animation: slideIn 1s ease-out;
 }
 .main:before,
 .main:after {
@@ -83,13 +89,13 @@ body {
   left: -900px;
   background-image: inherit;
   -webkit-animation: slideIn 1s ease-out forwards;
-  -moz-animation: slideIn 1s ease-out forwards;
-  -o-animation: slideIn 1s ease-out forwards;
-  animation: slideIn 1s ease-out forwards;
+     -moz-animation: slideIn 1s ease-out forwards;
+       -o-animation: slideIn 1s ease-out forwards;
+          animation: slideIn 1s ease-out forwards;
   -webkit-animation-delay: 1s;
-  -moz-animation-delay: 1s;
-  -o-animation-delay: 1s;
-  animation-delay: 1s;
+     -moz-animation-delay: 1s;
+       -o-animation-delay: 1s;
+          animation-delay: 1s;
   box-shadow: 4px 4px 7px #a18aa6;
 }
 .main:after {
@@ -157,15 +163,15 @@ body {
   }
   .main {
     -webkit-animation: none;
-    -moz-animation: none;
-    -o-animation: none;
-    animation: none;
+       -moz-animation: none;
+         -o-animation: none;
+            animation: none;
   }
   .main:before {
     left: 0;
     -webkit-animation: slideInFromTop 1s ease-out forwards;
-    -moz-animation: slideInFromTop 1s ease-out forwards;
-    -o-animation: slideInFromTop 1s ease-out forwards;
-    animation: slideInFromTop 1s ease-out forwards;
+       -moz-animation: slideInFromTop 1s ease-out forwards;
+         -o-animation: slideInFromTop 1s ease-out forwards;
+            animation: slideInFromTop 1s ease-out forwards;
   }
 }

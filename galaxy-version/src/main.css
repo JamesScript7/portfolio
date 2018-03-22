@@ -18,6 +18,7 @@ body {
 .space {
   height: 700px;
   height: 100vh;
+  position: relative;
   background-image: url('../images/space.jpg');
   background-position: center;
   background-size: cover;
@@ -27,7 +28,17 @@ body {
   width: 250px;
 }
 .pizza {
-  width: 175px;
+  width: 150px;
+}
+.forest {
+  width: 100%;
+  height: 220px;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background-image: url('../images/forest.png');
+  background-repeat: repeat-x;
+  background-position: top;
 }
 /* .nav {
   font-family: 'Source Sans Pro', Tahoma, Geneva, sans-serif;
@@ -79,7 +90,7 @@ body {
 .main:before,
 .main:after {
   position: absolute;
-  content: "";
+  content: '';
 }
 .main:before {
   z-index: -2;
@@ -105,7 +116,7 @@ body {
   right: .1em;
   bottom: .1em;
   left: .1em;
-  background-color: #F8F8F8;
+  background-color: #FFF;
 }
 .main--no-textzone:before {
   background-position: -.65em 0;

@@ -23,6 +23,7 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  overflow: hidden;
 }
 .cat {
   width: 250px;
@@ -31,7 +32,7 @@ body {
   width: 150px;
 }
 .forest {
-  width: 100%;
+  width: 3000px;
   height: 220px;
   left: 0;
   bottom: 0;

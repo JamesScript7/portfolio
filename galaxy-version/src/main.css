@@ -13,6 +13,7 @@
 a {
   text-decoration: none;
   color: snow;
+  display: inline-block;
 }
 a:hover {
   color: lightblue;
@@ -143,34 +144,51 @@ body {
   margin: 20px auto;
 }
 /* SKILLS */
-.skills h2, .project-pics h2 {
+.project-pics h2 {
+  color: snow;
+  margin-bottom: 20px;
+}
+.skills h2 {
+  color: #303030;
   margin-bottom: 20px;
 }
 .skills {
   margin-top: 75vh;
-  max-width: 800px;
+  min-width: 800px;
   text-align: center;
-  background-color: rgba(248,248,248,0.4);
+  border-radius: 49%;
+  background-color: rgba(240,240,240,0.99);
+  transform: rotate(-2deg);
+  box-shadow: 0 0 27px rgba(240,240,240,0.8);
+  /* SHADOW EFFECT ON THE MOON */
+  /* box-shadow: inset 16px 0 20px #282828, inset 30px 0 0 #282828; */
+  /* -moz-box-shadow: inset 16px 0px 20px #101010; */
 }
 /* IMAGES */
 .flying-cat-pizza {
   display: relative;
-  transform: rotate(-10deg);
+  transform: rotate(-12deg);
 }
 .moving-box {
   display: inline-block;
   position: absolute;
-  width: 405px;
+  width: 455px;
   left: -500px;
-  /* left: 500px; */
-  animation: leftToRight 90s infinite;
+  animation: leftToRight 80s infinite;
 }
 @keyframes leftToRight {
-  0% { left: -500px;}
+  0% {left: -300px;}
   100% {left: 2000px;}
 }
 .cat {
-  width: 250px;
+  width: 300px;
+  transition: transform 5s cubic-bezier(0,-1,1,1);
+}
+.cat:hover {
+  transform: rotate(30deg);
+}
+.cat:active {
+  transform: rotate(270deg);
 }
 .pizza {
   width: 150px;
@@ -213,6 +231,7 @@ body {
 }
 .pic {
   max-width: 640px;
+  border-radius: 7px;
 }
 /* FOOTER AREA */
 #footer {
@@ -276,7 +295,8 @@ body {
 .button:hover:before, .button:hover:after {
   width: 100%;
   height: 100%;
-  color: rgb(111, 186, 251);
+  color: #ae57bf;
+  transform: scale(0.9);
 }
 @-webkit-keyframes fadeIn {
   0% {opacity: 0;}
@@ -387,6 +407,17 @@ body {
   .flying-cat-pizza {
     transform: rotate(77deg);
   }
+  /* SKILLS */
+  .skills {
+    min-width: 90%;
+    border-radius: 0;
+    transform: rotate(0);
+    background-color: rgba(240,240,240,0.3);
+    box-shadow: none;
+  }
+  .skills h2 {
+    color: snow;
+  }
   /* SVG */
   .skill-icons {
     height: 80px;
@@ -406,7 +437,7 @@ body {
     width: 150px;
   }
   .pizza {
-    width: 100px;
+    width: 80px;
   }
   .pic {
     width: 100%;

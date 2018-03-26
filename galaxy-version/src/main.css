@@ -163,7 +163,7 @@ body {
   width: 405px;
   left: -500px;
   /* left: 500px; */
-  animation: leftToRight 60s infinite;
+  animation: leftToRight 90s infinite;
 }
 @keyframes leftToRight {
   0% { left: -500px;}
@@ -400,13 +400,16 @@ body {
   }
   /* IMAGES */
   .moving-box {
-    animation: leftToRight 60s infinite;
+    animation: leftToRight 100s infinite;
   }
   .cat {
     width: 150px;
   }
   .pizza {
     width: 100px;
+  }
+  .pic {
+    width: 100%;
   }
   /* ABOUT ME */
   .about-me, .skills {

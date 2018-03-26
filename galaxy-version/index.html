@@ -12,11 +12,15 @@
   </head>
   <body>
     <div id="wrapper" class="wrapper">
+
+      <!-- FIRST IMPRESSION -->
       <div class="main pic">
         JAMES KIM
         <p>Fullstack Web Developer</p>
       </div>
     </div>
+
+    <!-- ENTER SPACE ZONE -->
     <div class="space" alt="space background">
       <div class="container">
 
@@ -25,11 +29,17 @@
           <h2>About Me</h2>
           <div class="border-bottom"></div>
           <p>I love expressing my creativity as a developer. I also love cats, space, cats in space, pizza, cats in space on pizza... oh, and craft beer!</p>
+          <p>(Woa, look out for the cat!)</p>
         </div>
+
+        <!-- MR. MEOW PASSERBY -->
         <div id="flying-cat-pizza" class="flying-cat-pizza">
-          <img class="cat" src="images/cat.png" alt="falling cat">
-          <img class="pizza" src="images/pizza.png" alt="pizza slice">
+          <div class="moving-box">
+            <img class="cat" src="images/cat.png" alt="falling cat">
+            <img class="pizza rotating" src="images/pizza.png" alt="pizza slice">
+          </div>
         </div>
+
         <!-- START OF SKILLS -->
         <div class="skills">
           <h2>My Skills</h2>
@@ -70,22 +80,68 @@
             <object class="skill-icons" type="image/svg+xml" data="images/skills/vue.svg">You browser does not support SVG</object>
             <object class="skill-icons" type="image/svg+xml" data="images/skills/heroku.svg">You browser does not support SVG</object>
 
-            <img class="skill-icons" src="images/skills/express.png" alt="express"></img>
-            <img class="skill-icons" src="images/skills/firebase-card.png" alt="firebase"></img>
-            <img class="skill-icons" src="images/skills/postgresql-logo.png" alt="postgresql"></img>
             <img class="skill-icons" src="images/skills/python.png" alt="python"></img>
             <img class="skill-icons" src="images/skills/clang.png" alt="clang"></img>
+            <img class="skill-icons-img" src="images/skills/express.png" alt="express"></img>
+            <img class="skill-icons-img" src="images/skills/firebase-card.png" alt="firebase"></img>
+            <img class="skill-icons-img" src="images/skills/postgresql-logo.png" alt="postgresql"></img>
           </div>
-          <!-- END OF SKILLS -->
-
         </div>
+        <!-- END OF SKILLS -->
+
+        <!-- MY PROJECTS -->
+        <div class="project-pics">
+          <div>
+            <a href="http://peaceful-name.surge.sh/" target="_blank">
+              <img class="pic" src="./images/quote.png" alt="quote project screenshot"/>
+            </a>
+          </div>
+          <div>
+            <a href="https://blooming-refuge-35444.herokuapp.com/" target="_blank">
+              <img class="pic" src="./images/gifme.png" alt="gifme project screenshot"/>
+            </a>
+          </div>
+          <div>
+            <a href="http://robin-williams.surge.sh/" target="_blank">
+              <img class="pic" src="./images/robin.png" alt="Robin Williams project screenshot"/>
+            </a>
+          </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer id="footer">
+          <div id="btm-links">
+            <!-- Github -->
+            <a href="https://github.com/JamesScript7" target="_blank">
+              <button class="button">
+                Github
+              </button>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/jameskim16/" target="_blank">
+              <button class="button">
+                LinkedIn
+              </button>
+            </a>
+            <!-- Email -->
+            <a href="mailto:jameshkim7@gmail.com">
+              <button class="button">
+                Email
+              </button>
+            </a>
+          </div>
+          <div id="copyright">
+            &copy 2018 James Kim
+          </div>
+        </footer>
       </div>
     </div>
+    <!-- FIXED FOREST IMAGE -->
     <div>
       <div id ="forest" class="forest" alt="forest silhouette background"></div>
     </div>
-    <script src="src/lib/p5.min.js" type="text/javascript"></script>
-    <script src="src/lib/p5.play.js" type="text/javascript"></script>
+    <!-- <script src="src/lib/p5.min.js" type="text/javascript"></script>
+    <script src="src/lib/p5.play.js" type="text/javascript"></script> -->
     <script src="src/main.js"></script>
   </body>
 </html>

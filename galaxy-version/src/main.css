@@ -10,24 +10,19 @@
 :after {
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  color: snow;
+}
+
+a:hover {
+  color: lightblue;
+}
 body {
   font-size: 16px;
   background-color: #F8F8F8;
   color: #FFF;
 }
-/* .nav {
-  font-family: 'Source Sans Pro', Tahoma, Geneva, sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  position: absolute;
-  text-align: left;
-  width: 100%;
-  color: #202020;
-}
-.nav div {
-  display: inline-block;
-  padding: .2em;
-} */
 .wrapper {
   text-align: center;
   width: 100%;
@@ -131,10 +126,11 @@ body {
   font-family: 'Source Sans Pro', 'Tahoma', 'Geneva', sans-serif;
   font-size: 1.5em;
   max-width: 600px;
+  margin: 100px auto;
   margin: 50vh auto;
-  margin-bottom: 20px;
+  margin-bottom: 25vh;
   padding: 25px;
-  background-color: rgba(7,7,7,0.9);
+  background-color: rgba(7,7,7,0.8);
   color: #E0E0E0;
 }
 .about-me h2 {
@@ -145,10 +141,32 @@ body {
   margin: 20px auto;
 }
 /* SKILLS */
+.skills h2 {
+  margin-bottom: 20px;
+}
 .skills {
-  margin: 0 auto;
+  margin-top: 75vh;
+  max-width: 800px;
+  text-align: center;
+  background-color: rgba(248,248,248,0.4);
 }
 /* IMAGES */
+.flying-cat-pizza {
+  display: relative;
+  transform: rotate(-10deg);
+}
+.moving-box {
+  display: inline-block;
+  position: absolute;
+  width: 405px;
+  left: -500px;
+  /* left: 500px; */
+  animation: leftToRight 60s infinite;
+}
+@keyframes leftToRight {
+  0% { left: -500px;}
+  100% {left: 2000px;}
+}
 .cat {
   width: 250px;
 }
@@ -157,8 +175,13 @@ body {
 }
 /* SVG */
 .skill-icons {
-  /* height: 80px; */
-  width: 90px;
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+}
+.skill-icons-img {
+  width: 200px;
+  padding: 5px;
 }
 /* FOREST */
 .forest {
@@ -173,6 +196,71 @@ body {
   display: none;
   opacity: 0;
   animation: fadeIn 0.7s forwards;
+}
+/* FOOTER AREA */
+#footer {
+  background-color: #080808;
+  padding: 15px;
+  padding-bottom: 150px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 0 8px 30px black inset;
+}
+#btm-links {
+  padding: 0px;
+  text-align: center;
+}
+#copyright {
+  background-color: #080808;
+  color: #505050;
+  display: block;
+  font-size: .9em;
+  text-align: center;
+}
+/* BUTTON EFFECTS */
+.button {
+  font-family: 'Source Sans Pro', 'Tahoma', 'Geneva', sans-serif;
+  color: lightgray;
+  position: relative;
+  padding: 17px 31px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.2em;
+  margin: 1.3em 3em;
+}
+.button::before, .button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 11%;
+  height: 14%;
+  border: 2px solid;
+  transition: all 0.6s ease;
+}
+.button::before {
+  top: 0;
+  left: 0;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+.button::after {
+  bottom: 0;
+  right: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+.button:hover:before, .button:hover:after {
+  width: 100%;
+  height: 100%;
+  color: rgb(111, 186, 251);
 }
 @-webkit-keyframes fadeIn {
   0% {opacity: 0;}
@@ -226,6 +314,42 @@ body {
   0% {bottom: 100px;}
 	100% {bottom: -25px;}
 }
+/* PIZZA */
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 10s linear infinite;
+  -moz-animation: rotating 10s linear infinite;
+  -ms-animation: rotating 10s linear infinite;
+  -o-animation: rotating 10s linear infinite;
+  animation: rotating 10s linear infinite;
+}
 @media screen and (max-width: 400px) {
   .main {
     font-size: 2.5em;
@@ -243,7 +367,25 @@ body {
          -o-animation: slideInFromTop 1s ease-out forwards;
             animation: slideInFromTop 1s ease-out forwards;
   }
+  /* ANIMATION */
+  .flying-cat-pizza {
+    transform: rotate(77deg);
+  }
+  /* SVG */
+  .skill-icons {
+    height: 80px;
+    width: 80px;
+    margin: 4px;
+    padding: 6px;
+  }
+  .skill-icons-img {
+    width: 175px;
+    margin: 4px;
+  }
   /* IMAGES */
+  .moving-box {
+    animation: leftToRight 60s infinite;
+  }
   .cat {
     width: 150px;
   }
@@ -253,7 +395,7 @@ body {
   /* ABOUT ME */
   .about-me, .skills {
     font-size: 1.1em;
-    width: 80%;
+    width: 90%;
     padding: 3%;
   }
   .forest {

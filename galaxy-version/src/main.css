@@ -13,36 +13,7 @@
 body {
   font-size: 16px;
   background-color: #F8F8F8;
-  color: #fff;
-}
-.space {
-  /* height: 700px; */
-  height: 100%;
-  position: relative;
-  background-image: url('../images/space.jpg');
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  overflow: hidden;
-}
-.cat {
-  width: 250px;
-}
-.pizza {
-  width: 150px;
-}
-.forest {
-  width: 3000px;
-  height: 220px;
-  left: 0;
-  bottom: 0;
-  position: fixed;
-  background-image: url('../images/forest.png');
-  background-repeat: repeat-x;
-  background-position: top;
-  display: none;
-  opacity: 0;
-  animation: fadeIn 1s forwards;
+  color: #FFF;
 }
 /* .nav {
   font-family: 'Source Sans Pro', Tahoma, Geneva, sans-serif;
@@ -140,14 +111,88 @@ body {
   font-family: 'Source Sans Pro', 'Tahoma', 'Geneva', sans-serif;
   font-size: 0.5em;
 }
+/* EVERYTHING IN THE SPACE DIV */
+.space {
+  /* height: 700px; */
+  height: 100%;
+  position: relative;
+  background-image: url('../images/space.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.container {
+  width: 100%;
+  /* height: 100vh; */
+}
+/* ABOUT ME */
+.about-me, .skills {
+  font-family: 'Source Sans Pro', 'Tahoma', 'Geneva', sans-serif;
+  font-size: 1.5em;
+  max-width: 600px;
+  margin: 50vh auto;
+  margin-bottom: 20px;
+  padding: 25px;
+  background-color: rgba(7,7,7,0.9);
+  color: #E0E0E0;
+}
+.about-me h2 {
+  text-align: center;
+}
+.about-me p {
+  width: 90%;
+  margin: 20px auto;
+}
+/* SKILLS */
+.skills {
+  margin: 0 auto;
+}
+/* IMAGES */
+.cat {
+  width: 250px;
+}
+.pizza {
+  width: 150px;
+}
 /* SVG */
 .skill-icons {
   /* height: 80px; */
-  width: 80px;
+  width: 90px;
+}
+/* FOREST */
+.forest {
+  width: 3000px;
+  height: 200px;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  background-image: url('../images/forest.png');
+  background-repeat: repeat-x;
+  background-position: top;
+  display: none;
+  opacity: 0;
+  animation: fadeIn 0.7s forwards;
+}
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+-moz-@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+-o-@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 @keyframes fadeIn {
   0% {opacity: 0;}
   100% {opacity: 1;}
+}
+@keyframes fadeToBlack {
+  0% {background-color: #F8F8F8;}
+  100% {background-color: #080808;}
 }
 @-webkit-keyframes slideIn {
 	0% {left: -900px;}
@@ -197,5 +242,21 @@ body {
        -moz-animation: slideInFromTop 1s ease-out forwards;
          -o-animation: slideInFromTop 1s ease-out forwards;
             animation: slideInFromTop 1s ease-out forwards;
+  }
+  /* IMAGES */
+  .cat {
+    width: 150px;
+  }
+  .pizza {
+    width: 100px;
+  }
+  /* ABOUT ME */
+  .about-me, .skills {
+    font-size: 1.1em;
+    width: 80%;
+    padding: 3%;
+  }
+  .forest {
+    height: 150px;
   }
 }

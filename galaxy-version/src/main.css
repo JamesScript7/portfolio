@@ -16,8 +16,8 @@ body {
   color: #fff;
 }
 .space {
-  height: 700px;
-  height: 100vh;
+  /* height: 700px; */
+  height: 100%;
   position: relative;
   background-image: url('../images/space.jpg');
   background-position: center;
@@ -36,10 +36,13 @@ body {
   height: 220px;
   left: 0;
   bottom: 0;
-  position: absolute;
+  position: fixed;
   background-image: url('../images/forest.png');
   background-repeat: repeat-x;
   background-position: top;
+  display: none;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
 }
 /* .nav {
   font-family: 'Source Sans Pro', Tahoma, Geneva, sans-serif;
@@ -136,6 +139,15 @@ body {
 .main.pic p {
   font-family: 'Source Sans Pro', 'Tahoma', 'Geneva', sans-serif;
   font-size: 0.5em;
+}
+/* SVG */
+.skill-icons {
+  /* height: 80px; */
+  width: 80px;
+}
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 @-webkit-keyframes slideIn {
 	0% {left: -900px;}

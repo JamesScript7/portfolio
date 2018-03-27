@@ -122,7 +122,6 @@ body {
 }
 .container {
   width: 100%;
-  /* height: 100vh; */
 }
 /* ABOUT ME */
 .about-me, .skills {
@@ -158,27 +157,28 @@ body {
   text-align: center;
   border-radius: 49%;
   background-color: rgba(240,240,240,0.99);
-  transform: rotate(-2deg);
-  box-shadow: 0 0 27px rgba(240,240,240,0.8);
+  transform: rotate(-3deg);
+  box-shadow: 0 0 35px rgba(240,240,240,0.9);
   /* SHADOW EFFECT ON THE MOON */
   /* box-shadow: inset 16px 0 20px #282828, inset 30px 0 0 #282828; */
   /* -moz-box-shadow: inset 16px 0px 20px #101010; */
 }
 /* IMAGES */
 .flying-cat-pizza {
-  display: relative;
+  display: none;
+  position: relative;
   transform: rotate(-12deg);
+  left: -175px;
 }
 .moving-box {
   display: inline-block;
   position: absolute;
   width: 455px;
-  left: -500px;
-  animation: leftToRight 80s infinite;
+  animation: leftToRight 20s infinite linear;
 }
 @keyframes leftToRight {
-  0% {left: -300px;}
-  100% {left: 2000px;}
+  0% {left: -350px;}
+  100% {left: 2100px;}
 }
 .cat {
   width: 300px;
@@ -233,11 +233,20 @@ body {
   max-width: 640px;
   border-radius: 7px;
 }
+@media screen and (min-width: 1000px) {
+  img.pic {
+    transition: transform 0.7s ease-in-out;
+  }
+  img.pic:hover {
+    transform: scale(1.5);
+  }
+}
 /* FOOTER AREA */
 #footer {
   background-color: #080808;
   padding: 15px;
   padding-bottom: 150px;
+  margin-top: 150px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -277,7 +286,7 @@ body {
   position: absolute;
   width: 11%;
   height: 14%;
-  border: 2px solid;
+  border: 3px solid;
   transition: all 0.6s ease;
 }
 .button::before {
@@ -296,7 +305,7 @@ body {
   width: 100%;
   height: 100%;
   color: #ae57bf;
-  transform: scale(0.9);
+  transform: scale(0.8);
 }
 @-webkit-keyframes fadeIn {
   0% {opacity: 0;}
@@ -405,7 +414,8 @@ body {
   }
   /* ANIMATION */
   .flying-cat-pizza {
-    transform: rotate(77deg);
+    left: 20px;
+    transform: rotate(65deg);
   }
   /* SKILLS */
   .skills {
@@ -431,7 +441,7 @@ body {
   }
   /* IMAGES */
   .moving-box {
-    animation: leftToRight 100s infinite;
+    animation: leftToRight 50s infinite linear;
   }
   .cat {
     width: 150px;
@@ -439,8 +449,11 @@ body {
   .pizza {
     width: 80px;
   }
-  .pic {
-    width: 100%;
+  .project-pics {
+    text-align: center;
+  }
+  a .pic {
+    width: 90%;
   }
   /* ABOUT ME */
   .about-me, .skills {

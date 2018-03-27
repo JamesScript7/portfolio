@@ -4,7 +4,6 @@ window.onload = function() {
   var innerHeight = window.innerHeight;
   // console.log(innerHeight);
   window.addEventListener('scroll', function(e) {
-    // console.log(window.scrollY);
     if (window.scrollY > (innerHeight / 9)) {
       forest.style.display = 'inline-block';
       if (window.scrollY > (innerHeight / 8)) {
@@ -16,10 +15,17 @@ window.onload = function() {
       wrapper.style.animation = 'none';
       forest.style.display = 'none';
     }
-    // var catPizza = document.getElementById('flying-cat-pizza');
-    // if (catPizza.scrollIntoView()) {
-    //   console.log('start the animation!')
-    // }
+    // var mySkills = document.getElementById('mySkills').offsetTop;
+    var projectPics = document.getElementById('projectPics').offsetTop;
+    var catPizza = document.getElementById('flying-cat-pizza');
+    // When bottom of impact page hits the top of the window
+    if (window.scrollY >= innerHeight && window.scrollY <= projectPics) {
+      // console.log('activate cat');
+      catPizza.style.display = 'block';
+    } else {
+      // console.log('de-activate cat');
+      catPizza.style.display = 'none';
+    }
   });
 }
 // P5.js ZONE

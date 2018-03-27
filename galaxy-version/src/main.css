@@ -448,6 +448,7 @@ body {
   /* SKILLS */
   .skills {
     min-width: 90%;
+    margin-top: 50vh;
     border-radius: 0;
     background-color: rgba(240,240,240,0.3);
     box-shadow: none;
@@ -470,6 +471,9 @@ body {
     margin: 4px;
   }
   /* IMAGES */
+  .space {
+    background-image: url('../images/mobile-space.jpg');
+  }
   .moving-box {
     -webkit-animation: leftToRight 50s infinite linear;
             animation: leftToRight 50s infinite linear;
@@ -482,9 +486,11 @@ body {
   }
   .project-pics {
     text-align: center;
+    margin-top: 25vh;
   }
   a .pic {
     width: 90%;
+    border-radius: 0;
   }
   /* ABOUT ME */
   .about-me, .skills {
@@ -494,5 +500,13 @@ body {
   }
   .forest {
     height: 150px;
+  }
+  /* PROJECTS */
+  .project-pics div {
+    margin: 10px auto;
+  }
+  #footer {
+    margin-top: 50px;
+    padding-bottom: 15px;
   }
 }

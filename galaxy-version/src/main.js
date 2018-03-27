@@ -4,8 +4,11 @@ window.onload = function() {
   var innerHeight = window.innerHeight;
   // console.log(innerHeight);
   window.addEventListener('scroll', function(e) {
+
     if (window.scrollY > (innerHeight / 9)) {
-      forest.style.display = 'inline-block';
+      if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        forest.style.display = 'inline-block';
+      }
       if (window.scrollY > (innerHeight / 8)) {
         wrapper.style.animation = 'fadeToBlack 1.5s forwards'
       } else {

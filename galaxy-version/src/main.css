@@ -132,8 +132,8 @@ body {
   margin: 50vh auto;
   margin-bottom: 25vh;
   padding: 25px;
-  background-color: rgba(7,7,7,0.8);
   color: #E0E0E0;
+  background-color: rgba(7,7,7,0.8);
 }
 .about-me h2 {
   text-align: center;
@@ -157,8 +157,9 @@ body {
   text-align: center;
   border-radius: 49%;
   background-color: rgba(240,240,240,0.99);
-  transform: rotate(-3deg);
   box-shadow: 0 0 35px rgba(240,240,240,0.9);
+  -webkit-transform: rotate(-3deg);
+      -ms-transform: rotate(-3deg);
   /* SHADOW EFFECT ON THE MOON */
   /* box-shadow: inset 16px 0 20px #282828, inset 30px 0 0 #282828; */
   /* -moz-box-shadow: inset 16px 0px 20px #101010; */
@@ -167,14 +168,17 @@ body {
 .flying-cat-pizza {
   display: none;
   position: relative;
-  transform: rotate(-12deg);
+  -webkit-transform: rotate(-12deg);
+      -ms-transform: rotate(-12deg);
+          transform: rotate(-12deg);
   left: -175px;
 }
 .moving-box {
   display: inline-block;
   position: absolute;
   width: 455px;
-  animation: leftToRight 20s infinite linear;
+  -webkit-animation: leftToRight 20s infinite linear;
+          animation: leftToRight 20s infinite linear;
 }
 @keyframes leftToRight {
   0% {left: -350px;}
@@ -185,10 +189,14 @@ body {
   transition: transform 5s cubic-bezier(0,-1,1,1);
 }
 .cat:hover {
-  transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+          transform: rotate(30deg);
 }
 .cat:active {
-  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
 }
 .pizza {
   width: 150px;
@@ -215,7 +223,8 @@ body {
   background-position: top;
   display: none;
   opacity: 0;
-  animation: fadeIn 0.7s forwards;
+  -webkit-animation: fadeIn 0.7s forwards;
+          animation: fadeIn 0.7s forwards;
 }
 /* PROJECTS AREA */
 .project-pics {
@@ -238,7 +247,9 @@ body {
     transition: transform 0.7s ease-in-out;
   }
   img.pic:hover {
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
   }
 }
 /* FOOTER AREA */
@@ -270,15 +281,15 @@ body {
 /* BUTTON EFFECTS */
 .button {
   font-family: 'Source Sans Pro', 'Tahoma', 'Geneva', sans-serif;
-  color: lightgray;
+  font-size: 1.2em;
   position: relative;
+  margin: 1.3em 3em;
   padding: 17px 31px;
   border: none;
+  color: lightgray;
   background-color: transparent;
   cursor: pointer;
   outline: none;
-  font-size: 1.2em;
-  margin: 1.3em 3em;
 }
 .button::before, .button::after {
   content: "";
@@ -305,7 +316,10 @@ body {
   width: 100%;
   height: 100%;
   color: #ae57bf;
-  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+     -moz-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
 }
 @-webkit-keyframes fadeIn {
   0% {opacity: 0;}
@@ -322,6 +336,18 @@ body {
 @keyframes fadeIn {
   0% {opacity: 0;}
   100% {opacity: 1;}
+}
+@-webkit-keyframes fadeToBlack {
+  0% {background-color: #F8F8F8;}
+  100% {background-color: #080808;}
+}
+-moz-@keyframes fadeToBlack {
+  0% {background-color: #F8F8F8;}
+  100% {background-color: #080808;}
+}
+-o-@keyframes fadeToBlack {
+  0% {background-color: #F8F8F8;}
+  100% {background-color: #080808;}
 }
 @keyframes fadeToBlack {
   0% {background-color: #F8F8F8;}
@@ -363,37 +389,37 @@ body {
 @-webkit-keyframes rotating /* Safari and Chrome */ {
   from {
     -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
+         -o-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 @keyframes rotating {
   from {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
+       -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+         -o-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 .rotating {
   -webkit-animation: rotating 10s linear infinite;
-  -moz-animation: rotating 10s linear infinite;
-  -ms-animation: rotating 10s linear infinite;
-  -o-animation: rotating 10s linear infinite;
-  animation: rotating 10s linear infinite;
+     -moz-animation: rotating 10s linear infinite;
+      -ms-animation: rotating 10s linear infinite;
+       -o-animation: rotating 10s linear infinite;
+          animation: rotating 10s linear infinite;
 }
 @media screen and (max-width: 400px) {
   .main {
@@ -415,15 +441,19 @@ body {
   /* ANIMATION */
   .flying-cat-pizza {
     left: 20px;
-    transform: rotate(65deg);
+    -webkit-transform: rotate(65deg);
+        -ms-transform: rotate(65deg);
+            transform: rotate(65deg);
   }
   /* SKILLS */
   .skills {
     min-width: 90%;
     border-radius: 0;
-    transform: rotate(0);
     background-color: rgba(240,240,240,0.3);
     box-shadow: none;
+    -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+            transform: rotate(0);
   }
   .skills h2 {
     color: snow;
@@ -441,7 +471,8 @@ body {
   }
   /* IMAGES */
   .moving-box {
-    animation: leftToRight 50s infinite linear;
+    -webkit-animation: leftToRight 50s infinite linear;
+            animation: leftToRight 50s infinite linear;
   }
   .cat {
     width: 150px;

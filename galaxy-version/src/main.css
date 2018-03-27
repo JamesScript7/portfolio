@@ -111,9 +111,8 @@ body {
 }
 /* EVERYTHING IN THE SPACE DIV */
 .space {
-  /* height: 700px; */
-  height: 100%;
-  position: relative;
+  /* height: 100%; */
+  /* position: relative; */
   background-image: url('../images/space.jpg');
   background-position: center;
   background-size: cover;

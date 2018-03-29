@@ -3,15 +3,17 @@ window.onload = function() {
     innerHeight = window.innerHeight,
     wrapper = document.getElementById('wrapper'),
     arrow = document.getElementById('arrow'),
-    forest = document.getElementById('forest'),
-    // Cat animation elements:
-    mySkills = document.getElementById('mySkills').offsetTop,
-    catPizza = document.getElementById('flyingCatPizza'),
-    scrollPosition;
+    forest = document.getElementById('forest');
+  // MOBILE MODE:
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     arrow.remove();
     forest.remove();
   }
+  // Cat Animation Elements:
+  var
+    projectPics = document.getElementById('projectPics').offsetTop,
+    catPizza = document.getElementById('flyingCatPizza'),
+    scrollPosition;
   // Event Listeners:
   window.addEventListener('scroll', animationCentral);
   // Handles impact page, arrow, forest, and cat animation set/reset.
@@ -36,8 +38,8 @@ window.onload = function() {
       forest.style.display = 'none';
     }
     // Activate cat animation when the bottom of impact page hits the top of the window
-    // and stop when my skills hit top of the window.
-    (scrollPosition > innerHeight && scrollPosition < mySkills)
+    // and stop when My Projects hit top of the window.
+    (scrollPosition > innerHeight && scrollPosition < projectPics)
       ? catPizza.style.display = 'block'
       : catPizza.style.display = 'none';
   }

@@ -545,6 +545,9 @@ body {
     height: 150px;
   }
   /* PROJECTS */
+  .project-pics h2 {
+    font-size: 26px;
+  }
   .project-pics div {
     margin: 10px auto;
   }

@@ -5,26 +5,21 @@
   margin: 0;
   padding: 0;
 }
-*,
-:before,
-:after {
+*, :before, :after {
   box-sizing: border-box;
-}
-a {
-  text-decoration: none;
-  color: snow;
-  display: inline-block;
-}
-a:hover {
-  color: lightblue;
-}
-h2 {
-  font-family: 'Source Sans Pro', 'Tahoma', 'Geneva', sans-serif;
 }
 body {
   font-size: 16px;
   background-color: #F8F8F8;
   color: #FFF;
+}
+h2 {
+  font-family: 'Source Sans Pro', 'Tahoma', 'Geneva', sans-serif;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: snow;
 }
 .wrapper {
   text-align: center;
@@ -250,7 +245,7 @@ body {
 /* FOREST */
 .forest {
   width: 3000px;
-  height: 200px;
+  height: 190px;
   left: 0;
   bottom: 0;
   position: fixed;

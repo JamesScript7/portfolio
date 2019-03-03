@@ -16,9 +16,31 @@ window.onload = function() {
     scrollPosition;
   // Event Listeners:
   window.addEventListener('scroll', animationCentral);
+  arrow.addEventListener('click', function() {
+    function scrollToTopOfAbout(scrollDuration) {
+      var
+        scrollHeight = window.scrollY,
+        scrollStep = Math.PI / (scrollDuration / 15),
+        cosParameter = scrollHeight / 2,
+        scrollCount = 0,
+        scrollMargin,
+        scrollInterval = setInterval(function() {
+          if (window.scrollY != 0) {
+            scrollCount = scrollCount + 1;
+            scrollMargin = cosParameter - cosParameter * Math.cos(scrollCount * scrollStep);
+            window.scrollTo(0, (scrollHeight - scrollMargin ));
+          } else {
+            clearInterval(scrollInterval);
+          }
+        }, 15);
+      }
+    // console.log();
+    scrollToTopOfAbout(2000);
+  });
   // Handles impact page, arrow, forest, and cat animation set/reset.
   function animationCentral() {
     scrollPosition = window.pageYOffset;
+    console.log(scrollPosition);
     // Evaluate when scrolled down 1/9 of window height
     // else restore impact page to original, hide forest, and activate arrow jump animation.
     if (scrollPosition > (innerHeight / 9)) {

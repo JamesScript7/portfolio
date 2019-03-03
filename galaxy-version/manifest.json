@@ -1,6 +1,6 @@
 {
   "short_name": "James",
-  "name": "James Kim - Fullstack Web Developer",
+  "name": "James Kim - Front End Developer",
   "icons": [
     {
       "src": "./images/favicon.ico",
@@ -11,5 +11,5 @@
   "start_url": "./index.html",
   "display": "standalone",
   "theme_color": "#1D2671",
-  "background_color": "#1D2671",
+  "background_color": "#1D2671"
 }

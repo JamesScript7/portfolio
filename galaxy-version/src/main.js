@@ -4,12 +4,20 @@ window.addEventListener("DOMContentLoaded", function() {
     var forest = document.getElementById('forest');
     var wrapper = document.getElementById('wrapper');
 
+    // Cat Animation Elements
+    var projectPics = document.getElementById('projectPics').offsetTop;
+    var flyingCatPizza = document.getElementById('flyingCatPizza');
+
     if (isMobile()) {
         arrow.remove();
         forest.remove();
     }
 
-    // helper fn
+    // Event Listeners
+    window.addEventListener('scroll', animationCentral);
+    arrow.addEventListener('click', scrollTo);
+
+    // Functions
     function isMobile() { return (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Mobile|Silk|Opera Mini/i.test(navigator.userAgent)); }
 
     // TODO: Very very bad practice, not performant, update this to use requestanimationframe with ease-in-out formula
@@ -32,18 +40,9 @@ window.addEventListener("DOMContentLoaded", function() {
         }, 32);
     }
 
-    // Event Listeners
-    window.addEventListener('scroll', animationCentral);
-    arrow.addEventListener('click', scrollTo);
-
-    // Cat Animation Elements
-    var projectPics = document.getElementById('projectPics').offsetTop; 
-    var flyingCatPizza = document.getElementById('flyingCatPizza');
-    var scrollPosition;
-
     // Handles impact page, arrow, forest, and cat animation set/reset.
     function animationCentral() {
-        scrollPosition = window.pageYOffset;
+        var scrollPosition = window.pageYOffset;
 
         // Evaluate when scrolled down 1/9 of window height
         // else restore impact page to original, hide forest, and activate arrow jump animation.

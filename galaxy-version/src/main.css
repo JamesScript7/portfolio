@@ -1,26 +1,33 @@
 @-ms-viewport {
   width: device-width;
 }
+
+/* TODO: get rid of wildcard selector, not performant! */
 * {
   margin: 0;
   padding: 0;
 }
+
 *, :before, :after {
   box-sizing: border-box;
 }
+
 body {
   font-size: 16px;
   background-color: #F8F8F8;
   color: #FFF;
 }
+
 h2 {
   font-family: 'Source Sans Pro', 'Tahoma', 'Geneva', sans-serif;
 }
+
 a {
   display: inline-block;
   text-decoration: none;
   color: snow;
 }
+
 .wrapper {
   text-align: center;
   width: 100%;
@@ -37,6 +44,7 @@ a {
           -ms-flex-pack: center;
         justify-content: center;
 }
+
 .arrow {
   bottom: -10px;
   position: absolute;
@@ -48,6 +56,7 @@ a {
   background-image: url('../images/arrow.png');
   animation: jump 2.5s 1.5s ease-in-out;
 }
+
 @keyframes jump {
   from, 20%, 53%, 80%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -72,6 +81,7 @@ a {
             transform: translate3d(0,-4px,0);
   }
 }
+
 .main {
   font-family: 'Bungee', cursive, 'Tahoma', 'Geneva', sans-serif;
   font-size: 4em;
@@ -90,11 +100,13 @@ a {
        -o-animation: slideIn 1s ease-out;
           animation: slideIn 1s ease-out;
 }
+
 .main:before,
 .main:after {
   position: absolute;
   content: '';
 }
+
 .main:before {
   z-index: -2;
   top: 0;
@@ -112,6 +124,7 @@ a {
           animation-delay: 1s;
   box-shadow: 4px 4px 7px #a18aa6;
 }
+
 .main:after {
   position: absolute;
   z-index: -1;
@@ -121,12 +134,15 @@ a {
   left: .1em;
   background-color: #FFF;
 }
+
 .main--no-textzone:before {
   background-position: -.65em 0;
 }
+
 .main--no-textzone:after {
   content: none;
 }
+
 .main-text--cover,
 .main-text--cover:before {
   background-repeat: no-repeat;
@@ -135,10 +151,12 @@ a {
      -moz-background-size: cover;
        -o-background-size: cover;
 }
+
 .main.pic p {
   font-family: 'Source Sans Pro', 'Tahoma', 'Geneva', sans-serif;
   font-size: 0.5em;
 }
+
 /* EVERYTHING IN THE SPACE DIV */
 .space {
   /* height: 100%; */
@@ -149,9 +167,11 @@ a {
   background-attachment: fixed;
   overflow: hidden;
 }
+
 .container {
   width: 100%;
 }
+
 /* ABOUT ME */
 .about-me, .skills {
   font-family: 'Source Sans Pro', 'Tahoma', 'Geneva', sans-serif;
@@ -164,22 +184,27 @@ a {
   color: #E0E0E0;
   background-color: rgba(7,7,7,0.8);
 }
+
 .about-me h2 {
   text-align: center;
 }
+
 .about-me p {
   width: 90%;
   margin: 20px auto;
 }
+
 /* SKILLS */
 .project-pics h2 {
   color: snow;
   margin-bottom: 20px;
 }
+
 .skills h2 {
   color: #303030;
   margin-bottom: 20px;
 }
+
 .skills {
   margin-top: 75vh;
   min-width: 800px;
@@ -194,6 +219,7 @@ a {
   /* box-shadow: inset 16px 0 20px #282828, inset 30px 0 0 #282828; */
   /* -moz-box-shadow: inset 16px 0px 20px #101010; */
 }
+
 /* IMAGES */
 .flying-cat-pizza {
   display: none;
@@ -204,6 +230,7 @@ a {
   left: -175px;
   top: -100px;
 }
+
 .moving-box {
   display: inline-block;
   position: absolute;
@@ -211,36 +238,44 @@ a {
   -webkit-animation: leftToRight 20s infinite linear;
           animation: leftToRight 20s infinite linear;
 }
+
 @keyframes leftToRight {
   0% {left: -350px;}
   100% {left: 2100px;}
 }
+
 .cat {
   width: 300px;
   transition: transform 5s cubic-bezier(0,-2,1,0);
 }
+
 .cat:hover {
   -webkit-transform: rotate(30deg);
       -ms-transform: rotate(30deg);
           transform: rotate(30deg);
 }
+
 .cat:active {
   -webkit-transform: rotate(270deg);
       -ms-transform: rotate(270deg);
           transform: rotate(270deg);
 }
+
 .pizza {
   width: 150px;
 }
+
 /* SVG */
 .skill-icons {
   height: 150px;
   margin: 10px;
 }
+
 .skill-icons-img {
   width: 200px;
   padding: 5px;
 }
+
 /* FOREST */
 .forest {
   width: 3000px;
@@ -256,22 +291,27 @@ a {
   -webkit-animation: fadeIn 0.7s forwards;
           animation: fadeIn 0.7s forwards;
 }
+
 /* PROJECTS AREA */
 .project-pics {
   margin-top: 50vh;
 }
+
 .project-pics h2 {
   font-size: 33px;
   text-align: center;
 }
+
 .project-pics div {
   max-width: 640px;
   margin: 50px auto;
 }
+
 .pic {
   max-width: 640px;
   border-radius: 7px;
 }
+
 @media screen and (min-width: 1000px) {
   img.pic {
     transition: transform 0.7s ease-in-out;
@@ -282,6 +322,7 @@ a {
             transform: scale(1.2);
   }
 }
+
 /* FOOTER AREA */
 #footer {
   background-color: #08081A;
@@ -298,16 +339,19 @@ a {
   justify-content: space-around;
   box-shadow: 0 8px 30px black inset;
 }
+
 #btm-links {
   padding: 0px;
   text-align: center;
 }
+
 #copyright {
   color: #808080;
   display: block;
   font-size: .9em;
   text-align: center;
 }
+
 /* BUTTON EFFECTS */
 .button {
   font-family: 'Source Sans Pro', 'Tahoma', 'Geneva', sans-serif;
@@ -321,6 +365,7 @@ a {
   cursor: pointer;
   outline: none;
 }
+
 .button::before, .button::after {
   content: "";
   display: block;
@@ -330,18 +375,21 @@ a {
   border: 3px solid;
   transition: all 0.6s ease;
 }
+
 .button::before {
   top: 0;
   left: 0;
   border-bottom-color: transparent;
   border-right-color: transparent;
 }
+
 .button::after {
   bottom: 0;
   right: 0;
   border-top-color: transparent;
   border-left-color: transparent;
 }
+
 .button:hover:before, .button:hover:after {
   width: 100%;
   height: 100%;
@@ -351,6 +399,7 @@ a {
       -ms-transform: scale(0.85);
           transform: scale(0.85);
 }
+
 @-webkit-keyframes fadeIn {
   0% {opacity: 0;}
   100% {opacity: 1;}
@@ -415,6 +464,7 @@ a {
   0% {bottom: 100px;}
 	100% {bottom: -25px;}
 }
+
 /* PIZZA */
 @-webkit-keyframes rotating /* Safari and Chrome */ {
   from {
@@ -451,6 +501,7 @@ a {
        -o-animation: rotating 10s linear infinite;
           animation: rotating 10s linear infinite;
 }
+
 @media screen and (max-width: 400px) {
   .main {
     font-size: 2.5em;

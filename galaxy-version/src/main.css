@@ -525,6 +525,7 @@ a {
     border-radius: 0;
     background-color: rgba(240,240,240,0.7);
     box-shadow: none;
+    min-height: auto;
     -webkit-transform: rotate(0);
         -ms-transform: rotate(0);
             transform: rotate(0);
@@ -536,8 +537,6 @@ a {
   .skill-icons {
     height: 80px;
     width: 80px;
-    margin: 4px;
-    padding: 6px;
   }
   .skill-icons-img {
     width: 175px;
@@ -575,7 +574,7 @@ a {
   /* ABOUT ME */
   .about-me, .skills {
     font-size: 1.1em;
-    width: 90%;
+    width: 100%;
     padding: 3%;
   }
   .forest {

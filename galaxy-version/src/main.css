@@ -45,18 +45,6 @@ a {
         justify-content: center;
 }
 
-.arrow {
-  bottom: -10px;
-  position: absolute;
-  margin: 15px auto;
-  display: block;
-  width: 50px;
-  height: 50px;
-  left: calc(50% - 25px);
-  background-image: url('../images/arrow.png');
-  animation: jump 2.5s 1.5s ease-in-out;
-}
-
 @keyframes jump {
   from, 20%, 53%, 80%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -91,6 +79,7 @@ a {
   padding: .3em .5em;
   color: #fff;
   -webkit-background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
   /* background-image: linear-gradient(30deg,  #ae57bf, #44008b, #4c0f67, #00076f); */
   background-image: -webkit-linear-gradient(45deg, #ae57bf, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
@@ -150,6 +139,7 @@ a {
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
+          background-size: cover;
 }
 
 .main.pic p {
@@ -215,6 +205,7 @@ a {
   box-shadow: 0 0 35px rgba(240,240,240,0.9);
   -webkit-transform: rotate(-4deg);
       -ms-transform: rotate(-4deg);
+          transform: rotate(-4deg);
   /* SHADOW EFFECT ON THE MOON */
   /* box-shadow: inset 16px 0 20px #282828, inset 30px 0 0 #282828; */
   /* -moz-box-shadow: inset 16px 0px 20px #101010; */
@@ -519,9 +510,6 @@ a {
          -o-animation: slideInFromTop 1s ease-out forwards;
             animation: slideInFromTop 1s ease-out forwards;
   }
-  .arrow {
-    display: none;
-  }
   /* ANIMATION */
   .flying-cat-pizza {
     top: 0;
@@ -535,14 +523,14 @@ a {
     min-width: 90%;
     margin-top: 50vh;
     border-radius: 0;
-    background-color: rgba(240,240,240,0.3);
+    background-color: rgba(240,240,240,0.7);
     box-shadow: none;
     -webkit-transform: rotate(0);
         -ms-transform: rotate(0);
             transform: rotate(0);
   }
   .skills h2 {
-    color: snow;
+    color: #222;
   }
   /* SVG */
   .skill-icons {

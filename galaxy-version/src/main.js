@@ -1,6 +1,5 @@
 window.addEventListener("DOMContentLoaded", function() {
     var innerHeight = window.innerHeight;
-    var arrow = document.getElementById('arrow');
     var forest = document.getElementById('forest');
     var wrapper = document.getElementById('wrapper');
 
@@ -9,36 +8,14 @@ window.addEventListener("DOMContentLoaded", function() {
     var flyingCatPizza = document.getElementById('flyingCatPizza');
 
     if (isMobile()) {
-        arrow.remove();
         forest.remove();
     }
 
     // Event Listeners
     window.addEventListener('scroll', animationCentral);
-    arrow.addEventListener('click', scrollTo);
 
     // Functions
     function isMobile() { return (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Mobile|Silk|Opera Mini/i.test(navigator.userAgent)); }
-
-    // TODO: Very very bad practice, not performant, update this to use requestanimationframe with ease-in-out formula
-    function scrollTo() {
-        var scrollHeight = document.getElementById('scrollAnchor').offsetTop - 125;
-        var scrollDuration = 5000;
-        var scrollStep = Math.PI / (scrollDuration / 15);
-        var cosParameter = scrollHeight / 2;
-        var scrollCount = 0;
-        var scrollMargin;
-
-        var scrollInterval = setInterval(function() {
-            if (window.scrollY <= scrollHeight) {
-                scrollCount = scrollCount + 1;
-                scrollMargin = cosParameter - cosParameter * Math.cos(scrollCount * scrollStep);
-                window.scrollTo(0, ((window.pageYOffset + scrollMargin)));
-            } else {
-                clearInterval(scrollInterval);
-            }
-        }, 32);
-    }
 
     // Handles impact page, arrow, forest, and cat animation set/reset.
     function animationCentral() {

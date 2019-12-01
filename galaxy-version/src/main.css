@@ -493,7 +493,7 @@ a {
           animation: rotating 10s linear infinite;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .main {
     font-size: 2.5em;
   }

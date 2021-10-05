@@ -44,15 +44,4 @@ window.addEventListener("DOMContentLoaded", function() {
             ? flyingCatPizza.style.display = 'block'
             : flyingCatPizza.style.display = 'none';
     }
-
-    // ======================
-    // ==  FUTURE UPGRADE  ==
-    // ==    P5.js GAME    ==
-    // ======================
-    // function setup() {
-    //   createCanvas(800,400);
-    // }
-    // function draw() {
-    //   background(255,255,255);
-    // }
 });

@@ -197,6 +197,7 @@ a {
 
 .skills {
   margin-top: 75vh;
+  padding: 50px ​20px;
   min-width: 800px;
   min-height: 800px;
   text-align: center;
@@ -308,9 +309,9 @@ a {
     transition: transform 0.7s ease-in-out;
   }
   img.pic:hover {
-    -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 
